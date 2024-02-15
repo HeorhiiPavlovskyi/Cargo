@@ -1,0 +1,555 @@
+@font-face 
+	font-family: 'Poppins', sans-serif
+	src: url('../fonts/Poppins-Bold.ttf')
+	font-weight: 700 
+@font-face 
+	font-family: 'Poppins' sans-serif
+	src: url('../fonts/Poppins-Light.ttf')
+	font-weight: 300 
+@font-face 
+	font-family: 'Poppins' sans-serif
+	src: url('../fonts/Poppins-Medium.ttf')
+	font-weight: 500 
+@font-face 
+	font-family: 'Poppins' sans-serif
+	src: url('../fonts/Poppins-Regular.ttf')
+	font-weight: 400
+@font-face 
+	font-family: 'Poppins', sans-serif
+	src: url('../fonts/Poppins-SemiBold.ttf')
+	font-weight: 600
+
+$transition: 0.3s
+
+*
+	outline: none !important
+
+img 
+	max-width: 100%
+	height: auto
+
+body 
+	position: relative
+	overflow-x: hidden
+	display: flex
+	flex-direction: column
+	min-height: 100vh
+	&::-webkit-scrollbar
+		width: 8px
+		height: 4px
+	&::-webkit-scrollbar-track
+		background-color: #ffcc00
+		border-radius: 4px
+	&::-webkit-scrollbar-thumb
+		background-color: #ba0000
+		border-radius: 4px
+
+.btn 
+	&:focus
+		box-shadow: 0 0 0 0.0rem rgba(0, 123, 255, .25)
+
+.bg-red
+	background-color: #ba0000 !important
+	color: #fff
+
+.bg-yellow
+	background-color: #ffcc00 !important
+
+.topline
+	min-height: 50px
+	align-items: center
+	display: flex
+	font-size: 14px
+	.btn-topline
+		color: #fff
+		transition: $transition
+		&:hover
+			color: #ffcc00
+
+	.contact-link
+		color: #fff
+		text-transform: capitalize
+		text-decoration: none
+		transition: $transition
+		&:hover
+			color: #ffcc00
+
+
+.navbar
+	min-height: 120px
+	.nav-item
+		font-weight: 400
+		position: relative
+		&.active
+			font-weight: bold
+			letter-spacing: 1px
+		.nav-link
+			font-size: 14px
+			color: #ba0000 !important
+			text-transform: uppercase
+		.bottom-line
+			border-bottom: 5px solid #ba0000 !important
+			position: absolute
+			width: 100%
+			bottom: -41px
+
+.deliver
+	min-height: 800px
+	position: relative
+	.bg_lorry
+		background-image: url(../img/lorry.png)
+		background-size: cover
+		background-position: center center
+		background-repeat: no-repeat
+		position: absolute
+		top: 0
+		bottom: 0
+		right: 0
+		left: 0
+		.bg_overlay 
+			background-image: url(../img/bg-inner.png)
+			background-size: cover
+			background-position: center center
+			background-repeat: no-repeat
+			position: absolute
+			top: 0
+			bottom: 0
+			right: 0
+			left: 0
+			display: flex
+			justify-content: center
+			.deliver_block
+				color: #fff
+				display: flex
+				align-items: center
+				.deliver_title
+					font-family: 'Poppins', sans-serif
+					font-weight: bold
+					font-size: 70px
+					letter-spacing: 1px
+					text-transform: capitalize
+				.yellow-line
+					border-bottom: 5px solid #ffcc00
+					width: 14%
+				.block-text
+					color: #ffcc00
+					font-weight: normal
+					font-size: 20px
+				.priorities
+					font-size: 20px
+					font-weight: bold
+					letter-spacing: 1px
+					text-transform: uppercase
+					margin-right: 24px
+.btn-yellow
+	color: #fff
+	background: transparent
+	border: 2px solid #fff
+	border-radius: 100px
+	padding: 15px 30px
+	text-transform: uppercase
+	letter-spacing: 2px
+	font-weight: bold
+	font-size: 12px
+	margin-right: 16px
+	transition: $transition
+	&:hover
+		background: #ffcc00
+		color: #ba0000
+		border: 2px solid #ffcc00
+		box-shadow: 0 10px 6px rgba(255, 204, 0, .25)
+
+.btn-play, .btn-search
+	color: #fff
+	background: transparent
+	border: 2px solid #fff
+	border-radius: 100px
+	padding: 28px 25px
+	text-transform: uppercase
+	letter-spacing: 2px
+	font-weight: bold
+	font-size: 12px
+	transition: $transition
+	&:hover
+		background: #ffcc00
+		color: #ba0000
+		border: 2px solid #ffcc00
+		box-shadow: 0 10px 6px rgba(255, 204, 0, .25)
+	.fa-2xl
+		margin-left: 5px
+
+.btn-search
+	color: #ba0000
+	padding: 13px 15px
+	border: 2px solid #ba0000
+	&:hover
+		background: #ba0000
+		color: #fff
+		border: 2px solid #ba0000
+		box-shadow: 0 10px 6px rgba(186, 0, 0, .25)
+
+
+.services
+	margin-bottom: 50px
+	.title-shadow
+		margin-top: 50px
+		margin-bottom: 50px
+		color: #f8f8f8
+		font-size: 150px
+		text-transform: uppercase
+		letter-spacing: 1px
+		position: relative
+		font-weight: bold
+		.title
+			font-size: 50px
+			color: #ba0000
+			letter-spacing: 3px
+			font-weight: bold
+			text-transform: capitalize
+			position: absolute
+			top: 0
+			bottom: 0
+			align-items: center
+			display: flex
+
+	.service-card
+		margin-top: 20px
+		.card-title
+			font-size: 20px
+			color: #ba0000
+			text-transform: uppercase
+			letter-spacing: 1px
+			font-weight: 700
+		.card-text
+			font-size: 16px
+			color: #777777
+			letter-spacing: 1px
+		.card-link
+			font-size: 16px
+			text-transform: capitalize
+			color: #000
+			letter-spacing: 1px
+			font-weight: bold
+			margin-right: 4px
+			transition: $transition
+			&:hover
+				color: #ba0000
+
+	.explore-section
+		background: #ba0000
+		color: #fff
+		padding: 30px
+		.explore-title
+			font-size: 20px
+			color: #fff
+			text-transform: capitalize
+			letter-spacing: 1px
+			font-weight: 700
+		.explore-text
+			font-size: 15px
+			color: #fff
+		.yellow-line-explore
+			border-bottom: 2px solid #ffcc00
+			width: 35%
+		.dropdown
+			background: #9d0000
+			display: flex 
+			align-items: center
+			.dropdown-text
+				margin: 0
+				margin-left: 16px
+				letter-spacing: 1px
+				font-size: 16px
+				font-weight: 500
+			.dropdown-toggle
+				background: #ffcc00 !important
+				border: 0
+				border-radius: 0
+				margin-left: auto
+				padding: 13px 20px
+				&:after 
+					display: none
+
+			.dropdown-menu
+				&.show 
+					transform: translateY(35px) !important
+
+.ad
+	background-image: url(../img/dhl.png)
+	background-size: cover
+	background-position: center bottom
+	background-repeat: no-repeat
+	position: relative
+	margin-top: 50px
+	.ad_inner
+		background-image: url(../img/overley.png)
+		background-size: cover
+		background-position: center center 
+		background-repeat: no-repeat
+		top: 0
+		left: 0
+		bottom: 0
+		right: 0
+		.ad_title
+			position: absolute
+			top: 25%
+			display: flex
+			flex-direction: column
+			align-items: center
+			.ad_title-text
+				color: #fff 
+				display: flex
+				font-size: 50px
+				font-weight: bold
+				justify-content: center
+		.cargo-img
+			margin-top: -400px
+
+.filter-form
+	margin-bottom: 50px
+	padding-bottom: 40px
+	.cargo-card
+		padding: 35px 30px
+		box-shadow: 0 5px 20px rgba(0, 0, 0, .2)
+		.cargo-title
+			font-size: 20px
+			color: #ba0000
+			text-transform: capitalize
+			letter-spacing: 1px
+			font-weight: 700
+		.cargo-text
+			font-size: 16px
+			color: #777777
+			letter-spacing: 1px
+			margin-bottom: 0
+
+	.nav 
+		justify-content: center
+		.nav-item
+			width: 50%
+			.nav-link
+				background-color: #ffcc00
+				border-radius: 0
+				font-size: 16px
+				font-weight: bold
+				letter-spacing: 1px
+				text-transform: uppercase
+				color: #ba0000
+				&.active
+					color: #fff
+					background-color: #ba0000
+	.tab-content
+		background: #ba0000
+		padding: 40px 40px 24px
+
+		.card
+			border: 2px solid #fff
+			border-radius: 0
+			border-bottom: 1px
+			&.show 
+				border-color: #ffcc00
+				background: #ffcc00
+				.card-header
+					background: #ffcc00
+				.btn-link
+					color: #ba0000
+				.fa-chevron-down
+					color: #ba0000
+					transform: rotate(180deg) translateX(-25%)
+
+		.card-header
+			background: #ba0000
+			color: #fff
+			margin-bottom: 2px
+			border-bottom: 0
+			padding: 0
+			&.collapsed
+				background: #ffcc00
+
+		.btn 	
+			border: 0px
+
+		.btn-link
+			width: 100%
+			align-items: start
+			display: flex
+			font-size: 16px
+			font-weight: 400
+			text-transform: uppercase
+			letter-spacing: 1px
+			color: #fff
+			align-items: center
+			padding: .75rem 1.25rem
+			text-decoration: none
+			&:hover
+				text-decoration: none
+
+		.card-body
+			background: #9d0000
+			color: #fff
+			border-bottom: 2px solid #ffcc00
+
+		.accordeon-subtitle
+			font-size: 16px
+			font-weight: 700
+			text-transform: capitalize
+			letter-spacing: 2px
+
+		.accordeon-text
+			font-size: 16px
+			font-weight: 400
+			letter-spacing: 1px
+			text-transform: capitalize
+			margin-bottom: 4px
+
+	.team 
+		height: 500px
+		border: 20px solid #ffcc00
+		position: relative
+		width: 75%
+		margin-left: auto
+		margin-right: 40px
+		.team-bg
+			height: calc(100% + 40px)
+			width: calc(100% + 40px)
+			background-position: center top
+			background-repeat: no-repeat
+			background-size: cover
+			position: absolute
+			top: 20px
+			left: 20px
+			right: 0
+			bottom: 0
+			.team-bg-overlay
+				background-image: url(../img/team-overlay.png)
+				background-size: cover
+				background-position: center center
+				background-repeat: no-repeat
+				position: absolute
+				top: 0
+				bottom: 0
+				right: 0
+				left: 0
+			.overlay-logo
+				height: 50px
+				width: 100%
+				position: absolute
+				bottom: 0
+				left: 0
+				background: #ffcc00
+				background-image: url(../img/logo.png)
+				background-repeat: no-repeat
+
+.fa-chevron-down
+	transition: $transition
+	color: #fff
+
+.learn 
+	background: #ba0000
+	padding: 100px 0
+	.learn-text-block
+		.learn-title
+			color: #fff
+			font-size: 30px
+			text-transform: uppercase
+			font-weight: bold
+			letter-spacing: 1px
+		.learn-text
+			color: #fff
+			font-size: 16px
+			font-weight: 400
+
+	.learn-btn-block
+		height: 100%
+		display: flex
+		.btn-learn
+			padding: 15px 30px
+			color: #fff
+			text-transform: uppercase
+			font-size: 12px
+			letter-spacing: 1px
+			background: #9d0000
+			border-radius: 100px
+			font-weight: bold
+			transition: $transition
+			&:hover
+				background: #ffcc00
+				color: #ba0000
+				box-shadow: 0 10px 6px rgba(255, 204, 0, .25)
+
+.partners
+	padding: 70px 0
+	.partners-inner
+		width: 100%
+		height: 120px
+		background-color: #f9f9f9
+		padding: 0 20px
+		transition: $transition
+		border: 2px solid transparent
+		&:hover
+			border: 2px solid #ba0000
+		.partners-logo
+			background-position: center center 
+			background-repeat: no-repeat
+			background-size: contain
+			width: 100%
+			height: 100%
+
+.footer 
+	.footer-bg-inner
+		width: 100%
+		height: 255px
+		display: flex
+		.red-line-bg
+			height: 100%
+			width: 40px
+			background: #ba0000
+		.yellow-line-bg
+			height: 100%
+			width: 40px
+			background: #ffcc00
+		.footer-bg-left, .footer-bg-right
+			background-position: center bottom 
+			background-repeat: no-repeat
+			background-size: cover
+			width: 100%
+			height: 100%
+		.footer-bg-left
+			background-image: url(../img/footer-left.png)
+		.footer-bg-right
+			background-image: url(../img/footer-right.png)
+
+	.contact-block-footer, .about-block-footer, .social-block-footer
+		display: flex
+		flex-direction: column
+		flex-wrap: wrap
+		padding: 40px 0 20px 20px
+
+	.contact-block-footer
+		justify-content: start
+
+	.about-block-footer, .social-block-footer
+		justify-content: center
+
+	.footer-title
+		font-size: 20px
+		font-weight: bold
+		letter-spacing: 1px
+		text-transform: uppercase
+		color: #ba0000
+
+	.footer-links, .footer-links-social
+		font-size: 14px
+		font-weight: bold
+		letter-spacing: 1px
+		text-transform: uppercase
+		color: #777777
+		margin-bottom: 4px
+		text-decoration: none
+		transition: $transition
+	.footer-links
+		&:hover
+			color: #ffcc00
+	.footer-links-social
+		&:hover
+			color: #017edf
